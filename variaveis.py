@@ -4,10 +4,12 @@ Percentual_bonus = 0.1
 
 bonus_total = Faturamento_inicial * Percentual_bonus
 faturamento_liquido = Faturamento_inicial - bonus_total
+print('\n#######################################################################################\n')
 
-print(f'\nBonus_total: R${bonus_total:,.2f} | Faturamento líquido: R${faturamento_liquido:,.2f}\n')
 
-print('#######################################################################################')
+print(f'Bonus_total: R${bonus_total:,.2f} | Faturamento líquido: R${faturamento_liquido:,.2f}')
+
+print('\n#######################################################################################\n')
 
 # 2
 estoque = 250
@@ -15,18 +17,40 @@ vendidos = 78
 reposicao = 100
 
 estoque = estoque - vendidos + reposicao
-print(f'\nEstoque atualizado: {estoque} Un.\n')
+print(f'Estoque atualizado: {estoque} Un.')
 
-print('#######################################################################################')
+print('\n#######################################################################################\n')
 
 # 3
 caixas = 1250
 caminhao_suporta = 12
 
 total_caminhao_completo = caixas // caminhao_suporta
-print(f'\nCaminhões completos: {total_caminhao_completo} ')
+print(f'Caminhões completos: {total_caminhao_completo} ')
 
 caixas_restantes = caixas % caminhao_suporta
-print(f'Caixas restantes: {caixas_restantes}\n')
+print(f'Caixas restantes: {caixas_restantes}')
 
-print('#######################################################################################')
+print('\n#######################################################################################\n')
+
+faturamento = 15000
+custos = 5000
+perc_imposto = 0.15
+
+imposto = faturamento * perc_imposto
+lucro_liquido = faturamento - custos - imposto
+margem_lucro =  lucro_liquido / faturamento
+
+print(f'Imposto: R${imposto:,.2f}')
+print(f'Lucro Líquido: R${lucro_liquido:,.2f}')
+print(f'Margem de lucro: {margem_lucro:.2%}')
+
+meta_atigida = margem_lucro > 0.3
+print(f'Meta atingida? {meta_atigida}')
+if meta_atigida == True:
+    print('A meta foi atingida!')
+else:
+    print('A meta não foi atingida!')
+
+print('\n#######################################################################################\n')
+

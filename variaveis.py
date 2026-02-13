@@ -18,3 +18,15 @@ estoque = estoque - vendidos + reposicao
 print(f'\nEstoque atualizado: {estoque} Un.\n')
 
 print('#######################################################################################')
+
+# 3
+caixas = 1250
+caminhao_suporta = 12
+
+total_caminhao_completo = caixas // caminhao_suporta
+print(f'\nCaminhões completos: {total_caminhao_completo} ')
+
+caixas_restantes = caixas % caminhao_suporta
+print(f'Caixas restantes: {caixas_restantes}\n')
+
+print('#######################################################################################')

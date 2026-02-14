@@ -36,3 +36,12 @@ email_novo = email.replace(dominio_antigo, novo_dominio)
 print(email_novo)
 
 print('\n#######################################################################################\n')
+
+# 4
+email = 'beatriz.oliveira@grupocorp.com'
+posicao_a = email.find('@')
+
+username = email[:posicao_a]
+print(username)
+
+print('\n#######################################################################################\n')

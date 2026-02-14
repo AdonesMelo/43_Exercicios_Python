@@ -45,3 +45,16 @@ username = email[:posicao_a]
 print(username)
 
 print('\n#######################################################################################\n')
+
+# 5 
+nome =  'lucas ferreira souza'
+mensagem = 'Olá, [Primeiro Nome], seja bem-vindo ao nosso clube!'
+
+posicao_espaco = nome.find(' ')
+pri_nome = nome[:posicao_espaco].title()
+print(pri_nome)
+
+mensagem_formatada = mensagem.replace('[Primeiro Nome]', pri_nome)
+print(mensagem_formatada)
+
+print('\n#######################################################################################\n')

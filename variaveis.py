@@ -33,6 +33,7 @@ print(f'Caixas restantes: {caixas_restantes}')
 
 print('\n#######################################################################################\n')
 
+# 4
 faturamento = 15000
 custos = 5000
 perc_imposto = 0.15
@@ -54,3 +55,15 @@ else:
 
 print('\n#######################################################################################\n')
 
+# 5
+MESES_POR_ANO = 12
+duracao_contrato_meses = 40 # Valor dinamico
+anos_contrato = duracao_contrato_meses // MESES_POR_ANO
+meses_contrato = duracao_contrato_meses % MESES_POR_ANO
+
+if meses_contrato == 0:
+    print(f'O contrato tem duração de {anos_contrato} ano(s)')
+else:
+    print(f'O contrato tem duração de {anos_contrato} ano(s) e {meses_contrato} mês(es).')
+
+print('\n#######################################################################################\n')

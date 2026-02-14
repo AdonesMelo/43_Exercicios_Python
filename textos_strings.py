@@ -19,3 +19,17 @@ print(nome)
 
 email = email.strip().lower()
 print(email)
+
+print('\n#######################################################################################\n')
+
+# 3
+email = 'beatriz.oliveira@empresa.com'
+novo_dominio = '@grupocorp.com'
+
+posicao_a = email.find('@')
+print(posicao_a)
+
+email = email[:16] + novo_dominio
+print(email)
+
+print('\n#######################################################################################\n')

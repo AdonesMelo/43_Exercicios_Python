@@ -23,15 +23,16 @@ print(email)
 print('\n#######################################################################################\n')
 
 # 3
-email = 'beatriz.oliveira@empresa.com'
+email = 'andre_silva@empresa.com.br'
 novo_dominio = '@grupocorp.com'
 
-# posicao_a = email.find('@')
-# print(posicao_a)
+posicao_a = email.find('@')
+#print(posicao_a)
 
-# email = email[:16] + novo_dominio
-# print(email)
+dominio_antigo = email[posicao_a:]
+#print(dominio_antigo)
 
-email = email.replace('@empresa.com', '@grupocorp.com')
-print(email)
+email_novo = email.replace(dominio_antigo, novo_dominio)
+print(email_novo)
+
 print('\n#######################################################################################\n')

@@ -1,4 +1,5 @@
 print('#######################################################################################\n')
+# 1
 # Exemplo de entrada do usuario(Ex: R$ 5.000,00)
 faturamento = input('Digite o valor do faturamento: ')
 
@@ -11,3 +12,15 @@ imposto = fat_numerico * perc_imposto
 print(f'Imposto pago: R${imposto:,.2f}')
 
 print('\n#######################################################################################\n')
+
+# 2
+mensagem = 'Cadastro concluído: [Primeiro Nome]. E-mail de acesso: [E-mail padronizado]'
+
+nome = input('Digite o nome completo do colaborado: ').strip()
+email = input('Digite o email do colaborado: ').strip().lower()
+
+posicao_espaco = nome.find(' ')
+pri_nome = nome[:posicao_espaco].title()
+
+mensagem = mensagem.replace('[Primeiro Nome]', pri_nome).replace('[E-mail padronizado]', email)
+print(mensagem)

@@ -14,3 +14,25 @@ print(f'Média de vendas diária: {media_vendas}')
 print(f'A melhor venda: {melhor_venda} | A pior venda: {pior_venda}')
 
 print('\n#######################################################################################\n')
+
+# 2
+estoque = ["monitor", "teclado", "mouse", "headset"]
+print(estoque)
+
+estoque.append('webcam')
+print('Item adcionado no estoque.')
+
+posicao_teclado = estoque.index('teclado')
+estoque[posicao_teclado] = 'teclado mecanico'
+print('Item do estoque renomeado.')
+
+impressora_no_estoque = 'impressora' in estoque
+print(f'Tem impressora no estoque: {impressora_no_estoque}')
+
+estoque.remove('mouse')
+print('Item removido do estoque.')
+
+estoque_atualizado = ', '.join(estoque)
+print(f'Estoque atualizado: {estoque_atualizado}')
+
+print('\n#######################################################################################\n')

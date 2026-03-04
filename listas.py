@@ -36,3 +36,16 @@ estoque_atualizado = ', '.join(estoque)
 print(f'Estoque atualizado: {estoque_atualizado}')
 
 print('\n#######################################################################################\n')
+
+# 3
+fretes = [50, 80, 20, 150, 40]
+fretes.sort(reverse=True)
+print('Ordenando do maior para o menpor')
+print(fretes)
+
+top_fretes = fretes[:2]
+print('\n2 maiores fretes')
+print(top_fretes)
+
+
+print('\n#######################################################################################\n')

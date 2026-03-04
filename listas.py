@@ -47,5 +47,19 @@ top_fretes = fretes[:2]
 print('\n2 maiores fretes')
 print(top_fretes)
 
+print('\n#######################################################################################\n')
+
+# 4
+rota = ["Sao Paulo", "Campinas", "Jundiai", "Sorocaba"]
+novas_cidades = ["Itu", "Valinhos"]
+
+rota.extend(novas_cidades)
+print('Unir as listas')
+print(rota)
+
+posição_cidade = rota.index('Sorocaba') + 1
+print('Posição da cidade na lista')
+print(posição_cidade)
+print(f'Sorocaba é a {posição_cidade}ª cidade da rota')
 
 print('\n#######################################################################################\n')

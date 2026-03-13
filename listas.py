@@ -63,3 +63,21 @@ print(posição_cidade)
 print(f'Sorocaba é a {posição_cidade}ª cidade da rota')
 
 print('\n#######################################################################################\n')
+
+# 5
+precos = [100.0, 250.0, 500.0]
+vinhos = ["Branco", "Tinto","Champagne"]
+
+vinho_escolhido = input('Digite o vinho a ser alterado: ')
+novo_preco = input('Digite o novo preco: ')
+
+novo_preco = novo_preco.replace('R$', '').replace('.', '').replace(',', '.')
+novo_preco = float(novo_preco)
+
+posicao_vinho = vinhos.index(vinho_escolhido)
+precos[posicao_vinho] = novo_preco
+
+print(vinhos)
+print(precos)
+
+print('\n#######################################################################################\n')

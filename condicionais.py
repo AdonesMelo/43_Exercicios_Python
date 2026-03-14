@@ -13,3 +13,13 @@ else:
     print('Perfil arrojado: Sugerimos Ações')
 
 print('\n#######################################################################################\n')
+
+# 2
+admins = ["ana@empresa.com", "guilherme@empresa.com", "felipe@empresa.com"]
+
+email = input('Digite o seu email: ').strip().lower()
+
+if email in admins:
+    print('Acesso liberado! Bem-vindo ao painel de controle')
+else:
+    print('Acesso negado. Você não tem permissões de administrador')

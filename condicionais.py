@@ -23,3 +23,22 @@ if email in admins:
     print('Acesso liberado! Bem-vindo ao painel de controle')
 else:
     print('Acesso negado. Você não tem permissões de administrador')
+
+print('\n#######################################################################################\n')
+
+# 3
+valor_carrinho = 500
+
+if valor_carrinho < 200:
+    perc_desconto = 0
+elif valor_carrinho < 500:
+    perc_desconto = 0.1
+else:
+    perc_desconto = 0.15
+
+desconto = valor_carrinho * perc_desconto
+valor_final = valor_carrinho - desconto
+
+print(f'O desconto foi de R${desconto:,.2f} e o valor a ser pago é de {valor_final:,.2f}')
+
+print('\n#######################################################################################\n')

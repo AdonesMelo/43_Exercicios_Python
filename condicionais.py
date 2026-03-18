@@ -42,3 +42,17 @@ valor_final = valor_carrinho - desconto
 print(f'O desconto foi de R${desconto:,.2f} e o valor a ser pago é de {valor_final:,.2f}')
 
 print('\n#######################################################################################\n')
+
+# 4
+meta_vendedor = 1000
+vendas_vendedor = 1000
+
+meta_loja = 5000
+vendas_loja = 4000
+
+if vendas_vendedor >= meta_vendedor and vendas_loja >= meta_loja:
+    bonus = 0.2 * vendas_vendedor
+else:
+    bonus = 0
+
+print(f'Seu bônus este mês é de: R${bonus:,.2f}')

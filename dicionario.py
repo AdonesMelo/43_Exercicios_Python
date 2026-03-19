@@ -13,3 +13,12 @@ clientes['Marcos'] = 2000
 print(clientes)
 
 print('\n#######################################################################################\n')
+
+# 2
+estoque = {"teclado": 50, "mouse": 120, "monitor": 30}
+produto = input('Digite o nome do produto: ').strip().lower()
+
+if produto in estoque:
+    print(f'O produto {produto} tem {estoque[produto]} unidades no estoque.')
+else:
+    print('Produto não encontrado no sistema')

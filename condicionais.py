@@ -56,3 +56,19 @@ else:
     bonus = 0
 
 print(f'Seu bônus este mês é de: R${bonus:,.2f}')
+
+print('\n#######################################################################################\n')
+
+# 5
+assunto = 'Problemas com pagamento'
+
+assunto = assunto.lower()
+
+if 'pagamento' in assunto or 'boleto' in assunto:
+    print('Encaminhado para o Financeiro')
+elif 'entrega' in assunto or 'atraso' in assunto:
+    print('Encaminhado para a Logística')
+else:
+    print('Encaminhado para o Suporte Geral')
+
+print('\n#######################################################################################\n')

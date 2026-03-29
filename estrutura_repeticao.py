@@ -22,3 +22,14 @@ for venda in vendas:
 print(f'O vendedor receberá R${comissao_total:,.2f}')
 
 print('\n#######################################################################################\n')
+
+# 3
+estoque_produtos = ["monitor", "teclado", "mouse", "headset", "gabinete"]
+estoque_quantidades = [5, 12, 2, 8, 15]
+
+for i, quantidade in enumerate(estoque_quantidades):
+    if quantidade < 8:
+        produto = estoque_produtos[i]
+        print(f'ALERTA: O produto {produto} está com apenas {quantidade} unidades no estoque!')
+
+print('\n#######################################################################################\n')

@@ -49,3 +49,16 @@ notas = desempenho[nome]
 print(f'Notas: {notas}')
 media = sum(notas) / len(notas)
 print(f'Media: {media}')
+
+print('\n#######################################################################################\n')
+
+# 5
+produtos = {"celular": 1500, "camera": 800, "radio": 200, "fone": 100}
+
+remover_item = 'radio'
+produtos.pop(remover_item)
+print(f'Dicionário atualizado: {produtos}')
+
+conferencia_produto = 'celular'
+conferencia_estoque = conferencia_produto in produtos
+print(f'O produto está no estoque? {conferencia_estoque}')

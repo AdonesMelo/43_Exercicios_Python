@@ -44,3 +44,17 @@ for mes in gastos:
         print(f"Mês {mes}: Orçamento estourado em R${diferencia}.")
     else:
         print(f"Mês {mes}: Dentro do orçamento.")
+
+print('\n#######################################################################################\n')
+
+# 5
+precos = {"celular": 1500, "tablet": 2500, "notebook": 5000}
+
+perc_aumento = input('Qual o aumendo planejado? ') # entrada desejada 10%
+perc_aumento = perc_aumento.replace('%', '') # transformou o % por vazio --> 10
+perc_aumento = float(perc_aumento) / 100 # tranformou em decimal --> 0.1
+
+for produto in precos:
+    precos[produto] = precos[produto] * (1 + perc_aumento) # calculor para aumentar o valor em porcentagem
+
+print(precos)

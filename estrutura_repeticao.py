@@ -33,3 +33,14 @@ for i, quantidade in enumerate(estoque_quantidades):
         print(f'ALERTA: O produto {produto} está com apenas {quantidade} unidades no estoque!')
 
 print('\n#######################################################################################\n')
+
+# 4
+metas = {"jan": 1000, "fev": 1200, "mar": 1100}
+gastos = {"jan": 900, "fev": 1350, "mar": 1100}
+
+for mes in gastos:
+    if gastos[mes] > metas[mes]:
+        diferencia = gastos[mes] - metas[mes]
+        print(f"Mês {mes}: Orçamento estourado em R${diferencia}.")
+    else:
+        print(f"Mês {mes}: Dentro do orçamento.")

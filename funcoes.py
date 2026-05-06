@@ -28,3 +28,18 @@ print('3 opção')
 print(produtos_padronizados_3)
 
 print('\n#######################################################################################\n')
+
+# 2
+def calcular_iss(valor):
+    if valor > 5000:
+        taxa = 0.05
+    else:
+        taxa = 0.03
+    
+    imposto = valor * taxa
+
+    return imposto
+
+print(f'Imposto de uma nota de R$ 8.000,00 --> imposto R$ {calcular_iss(8000):,.2f}')
+
+print(f'Imposto de uma nota de R$ 3.000,00 --> imposto R$ {calcular_iss(3000):,.2f}')

@@ -76,3 +76,19 @@ meta_objetivo = 10000
 quem_bateu_meta(equipe_vendas, meta_objetivo)
 
 print('\n#######################################################################################\n')
+
+# 5
+def converter_para_real(valor_dolar, cotacao_dolar):
+    valor_real = valor_dolar * cotacao_dolar
+
+    return valor_real
+
+def processar_lista_precos(precos_produtos, cotacao_dolar):
+    for item in precos_produtos:
+        valor_real = converter_para_real(item, cotacao_dolar)
+        print(f'O item custa em dolar: US$ {item:,.2f} e em reais custa: R$ {valor_real:,.2f}')
+
+precos_usd = [100, 50, 250]
+cotacao_dolar = 5.20
+
+processar_lista_precos(precos_usd, cotacao_dolar)

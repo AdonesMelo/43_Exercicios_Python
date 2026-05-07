@@ -43,3 +43,19 @@ def calcular_iss(valor):
 print(f'Imposto de uma nota de R$ 8.000,00 --> imposto R$ {calcular_iss(8000):,.2f}')
 
 print(f'Imposto de uma nota de R$ 3.000,00 --> imposto R$ {calcular_iss(3000):,.2f}')
+
+# 3
+def analisar_margem(faturamento, custo):
+    lucro = faturamento - custo
+    margem = lucro / faturamento
+
+    if margem >= 0.3:
+        return 'Margem Saudável'
+    else:
+        return 'Margem Baixa'
+
+faturamento = float(input('Digite o faturamento: '))
+custo = float(input('Digite o custo: '))
+
+resultado_analise = analisar_margem(faturamento, custo)
+print(resultado_analise)

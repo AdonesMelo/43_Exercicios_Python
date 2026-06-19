@@ -42,4 +42,19 @@ def analisar_vendas(lista_vendas):
 # Iterando sobre a lista de filiais
 for filial in dados_filiais:
     total_vendas, media_vendas = analisar_vendas(dados_filiais[filial])
-    print(f'Filial {filial} -> Total: R${total_vendas:.2f}, Média: R${media_vendas:.2f}')   
+    print(f'Filial {filial} -> Total: R${total_vendas:.2f}, Média: R${media_vendas:.2f}')
+
+print('\n#######################################################################################\n')
+# 5
+tempos = [15, 45, 10, 120, 30] 
+
+def resumo_chamados(lista_chamados):
+    quantidade_chamados = len(lista_chamados)
+    tempo_maximo_espera = max(lista_chamados)
+
+    return quantidade_chamados, tempo_maximo_espera
+
+qtd, max_espera = resumo_chamados(tempos)
+print(f'Foram abertos {qtd} chamados, o tempo máximo de SLA: {max_espera} minutos')
+
+print('\n#######################################################################################\n')

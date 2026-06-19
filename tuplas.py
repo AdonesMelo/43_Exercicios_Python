@@ -18,3 +18,12 @@ def calcular_folha(salario):
 salario = 5000
 salario_liquido, desconto = calcular_folha(salario)
 print(f"Desconto: R${desconto:.2f} | Salário Líquido: R${salario_liquido:.2f}")
+
+print('\n#######################################################################################\n')
+# 3
+#(produto, preco_unitario, quantidade)
+vendas_dia = [("Monitor", 900, 2), ("Teclado", 150, 5), ("Mouse", 80, 10)]
+
+# Iterando sobre a lista de vendas
+for produto, preco_unitario, quantidade in vendas_dia: # desempacotamento de tupla
+    print(f'Produto: {produto:<10} | Total: R${preco_unitario * quantidade:.2f}')
